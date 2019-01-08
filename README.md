@@ -21,9 +21,10 @@ $ cd notes-keeper
 	"SECRET_KEY": "key_goes_here"
 }
 ```
-* Install Requirements, and run Django commands to migrate database and run the server
+* Install Requirements, and run Django commands to migrate database, collect static, and run the server
 ```
 $ pip install -r requirements.txt
+$ python manage.py collectstatic
 $ python manage.py migrate
 $ python manage.py runserver
 ```
