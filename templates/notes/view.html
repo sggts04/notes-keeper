@@ -1,0 +1,17 @@
+{% extends "notes/base.html" %}
+{% block head %}
+<title>View Note</title>
+{% endblock %}
+{% block content %}
+<h3>{{ note.title }}</h3>
+<h6 class="text-muted mt-0">by {{ note.author.username }}</h6>
+<small class="text-muted mt-0">Last Modified: {{ note.date_modified }}</small>
+<hr/>
+{% if not read_only %}
+<a class="btn btn-outline-success btn-sm" href="/edit/{{ note.id }}/">Edit</a>
+<a class="btn btn-outline-danger btn-sm" href="/delete/{{ note.id }}/">Delete</a>
+{% endif %}
+<div class="content-section mt-3">
+    {{ note.content | safe }}
+</div>
+{% endblock %}

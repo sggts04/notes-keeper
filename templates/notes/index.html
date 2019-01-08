@@ -1,0 +1,25 @@
+{% extends "notes/base.html" %}
+{% block head %}
+<title>Notes Keeper</title>
+{% endblock %}
+{% block content %}
+{% if user.is_authenticated %}
+<h3>My Notes</h3>
+<hr/>
+{% if user.notes.all %}
+{% for note in user.notes.all %}
+<h4 class="mt-4">{{ note.title }}</h4>
+<a class="btn btn-outline-info btn-sm" href="/view/{{ note.id }}/">View</a>
+<a class="btn btn-outline-success btn-sm" href="/edit/{{ note.id }}/">Edit</a>
+<a class="btn btn-outline-danger btn-sm" href="/delete/{{ note.id }}/">Delete</a>
+<br>
+<small class="text-muted mt-0">Last Modified: {{ note.date_modified }}</small>
+{% endfor %}
+<br>
+{% else %}
+<p class="text-muted mt-3">You have no notes.</p>
+{% endif %}
+{% else %}
+<h3>Welcome!</h3><br><h4>Please Login to Continue.</h4>
+{% endif %}
+{% endblock %}
