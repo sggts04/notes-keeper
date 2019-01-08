@@ -31,10 +31,10 @@ The WebApp should be available at `http://127.0.0.1:8000`
 
 ## Screenshots
 * Dashboard
-![](https://raw.githubusercontent.com/sggts04/notes-keeper/master/screenshots/dash.PNG?token=ATuFn5_N4YWHLL2od8nnBf-hRwt60S1Jks5cNFmqwA%3D%3D)
+![](/screenshots/dash.PNG?raw=true)
 
 * View Note
-![](https://raw.githubusercontent.com/sggts04/notes-keeper/master/screenshots/view.PNG?token=ATuFn968d2wD22lgnQc_W_G_ncJ70VRVks5cNFl7wA%3D%3D)
+![](/screenshots/view.PNG?raw=true)
 
 * New Note
-![](https://raw.githubusercontent.com/sggts04/notes-keeper/master/screenshots/new.PNG?token=ATuFnwV_iYUPfARos07kVyYqkvTag6uDks5cNFnDwA%3D%3D)
+![](/screenshots/new.PNG?raw=true)
