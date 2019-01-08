@@ -4,6 +4,7 @@ A Notes WebApp built in Django using Python. Live App on https://django-notes-ke
 
 ## Features
 * Ability to Create, Edit, and Delete Notes.
+* The Notes use an easy to use WYSIWYG Editor.
 * Ability to make Public Notes, so anyone with the link can view it. (Private Notes can only be seen by the Author)
 * User System with Password Hashing and Salting.
 
@@ -20,8 +21,9 @@ $ cd notes-keeper
 	"SECRET_KEY": "key_goes_here"
 }
 ```
-* Run Django command to migrate database and run the server
+* Install Requirements, and run Django commands to migrate database and run the server
 ```
+$ pip install -r requirements.txt
 $ python manage.py migrate
 $ python manage.py runserver
 ```
