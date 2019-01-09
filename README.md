@@ -10,19 +10,19 @@ A Notes WebApp built in Django using Python. Live App on https://django-notes-ke
 
 ## Installation
 * Clone the repository
-```
+```bash
 $ git clone https://github.com/sggts04/notes-keeper
 $ cd notes-keeper
 ```
 * Edit config.json to change the secret key    
 ##### config.json
-```
+```json
 {
 	"SECRET_KEY": "key_goes_here"
 }
 ```
 * Install Requirements, and run Django commands to migrate database, collect static, and run the server
-```
+```bash
 $ pip install -r requirements.txt
 $ python manage.py collectstatic
 $ python manage.py migrate
