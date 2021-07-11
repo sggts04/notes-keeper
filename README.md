@@ -1,6 +1,6 @@
 # Notes Keeper
 
-A Notes WebApp built in Django using Python. Live App on https://django-notes-keeper.herokuapp.com 
+A Notes WebApp built in Django using Python.
 
 ## Features
 * Ability to Create, Edit, and Delete Notes.
